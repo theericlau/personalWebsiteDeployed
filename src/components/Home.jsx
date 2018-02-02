@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 // import { Route, Switch } from 'react-router-dom';
 
 // import Portfolio from './Portfolio';
@@ -20,6 +21,12 @@ import PropTypes from 'prop-types';
 //   );
 // };
 
+const Image = styled.img`
+  width:100%;
+  margin: 0;
+  padding: 0;
+`;
+
 class Home extends Component {
   componentDidMount() {
     document.title = 'Eric Lau';
@@ -28,7 +35,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <h1>hi</h1>
+        <Image src={require('../assets/websiteHome.jpg')} alt="home" />
       </div>
     )
   }
