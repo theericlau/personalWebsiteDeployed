@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Header from './Header';
+
 
 class Contact extends Component {
   constructor(props) {
@@ -38,6 +40,11 @@ class Contact extends Component {
   render() {
     return (
       <div>
+        <Header />
+
+        <br/>
+        <br/>
+
         Let's Work Together
         <div className="form">
             Name

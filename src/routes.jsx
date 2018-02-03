@@ -18,7 +18,6 @@ import Portfolio from './components/Portfolio';
 const routes = (
   <Router>
     <div>
-      <Header />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/portfolio" component={Portfolio} />

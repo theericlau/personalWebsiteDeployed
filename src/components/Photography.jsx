@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Header from './Header';
+
 
 class Photography extends Component {
   componentDidMount() {
@@ -9,6 +11,7 @@ class Photography extends Component {
   render() {
     return (
       <div>
+        <Header />
         Photography
       </div>
     );

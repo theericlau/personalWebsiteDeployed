@@ -1,20 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
 
-html, body {
+html, body, #root {
+  margin-top: 0;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  font-size: 16px;
+}
+#root {
+  background-image: url('websiteHome.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .intro {
   width: 100%;
   height:100%;
-  display: table;
   top: 0;
+  background-size: cover;
 }
 
-h1 {
-  color: red;
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-family: 'Raleway';
+  color: #F9F3F4;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 500%;
+  margin-right: 80px;
+}
+
+.copyright {
+  font-family: 'Oswald';
+  text-align: center;
+}
+
+li {
+  float: left;
+  display: inline;
+}
+
+.header-link {
+  font-family: 'Oswald';
+  text-shadow:0px 0px 2000px #000;
+  color: #F9F3F4;
+  padding: 100px;
+}
+
+.header-name {
+  font-family: 'Reenie Beanie', cursive;
+  text-shadow:0px 0px 2000px #000;
+  color: #F9F3F4;
+  font-size: 500%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline;
+}
+
+a:hover {
+  color: grey;
 }

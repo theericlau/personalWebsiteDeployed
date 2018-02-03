@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom';
 class Header extends Component {
   render() {
     return (
-      <div>
-          <div className="header"><Link to="/portfolio">Portfolio</Link></div>
-          <div className="header"><Link to="/photography">Photography</Link></div>
-          <div className="header"><Link to="/about">About</Link></div>
-          <div className="header"><Link to="/contact">Contact</Link></div>
-      </div>
+      <ul className="header">
+          <li><Link to="/portfolio" className="header-link">Portfolio</Link></li>
+          <li><Link to="/photography" className="header-link">Photography</Link></li>
+        <li><a href="/" className="header-name">Eric Lau</a></li>
+          <li><Link to="/about" className="header-link">About</Link></li>
+          <li><Link to="/contact" className="header-link">Contact</Link></li>
+      </ul>
     )
   }
 }

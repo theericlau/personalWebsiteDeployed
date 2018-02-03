@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import image from '../assets/websiteHome.jpg';
+// import image from '../assets/websiteHome.jpg';
+import Header from './Header';
+
 // import { Route, Switch } from 'react-router-dom';
 
 // import Portfolio from './Portfolio';
@@ -22,8 +24,8 @@ import image from '../assets/websiteHome.jpg';
 //   );
 // };
 
+// background: url(${image});
 const Image = styled.section`
-  background-image: url(${image});
 `;
 
 const ColorDiv = styled.div`
@@ -38,15 +40,13 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
         <Image className="intro">
+          <Header />
             <div className="inner">
               <div className="content">
-                <h1>Home</h1>
               </div>
             </div>
         </Image>
-      </div>
     )
   }
 }
