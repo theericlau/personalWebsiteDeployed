@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import image from '../assets/websiteHome.jpg';
 // import { Route, Switch } from 'react-router-dom';
 
 // import Portfolio from './Portfolio';
@@ -21,11 +22,14 @@ import styled from 'styled-components';
 //   );
 // };
 
-const Image = styled.img`
-  width:100%;
-  margin: 0;
-  padding: 0;
+const Image = styled.section`
+  background-image: url(${image});
 `;
+
+const ColorDiv = styled.div`
+  color: red;
+`;
+{/* <Image className="intro" src={require('../assets/websiteHome.jpg')} alt="home" /> */}
 
 class Home extends Component {
   componentDidMount() {
@@ -35,7 +39,13 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Image src={require('../assets/websiteHome.jpg')} alt="home" />
+        <Image className="intro">
+            <div className="inner">
+              <div className="content">
+                <h1>Home</h1>
+              </div>
+            </div>
+        </Image>
       </div>
     )
   }
