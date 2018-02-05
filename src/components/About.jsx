@@ -10,8 +10,8 @@ class About extends Component {
 
   render() {
     return (
-      <div>
-        <Header />
+      <div className="component-header wipe">
+        <Header/>
         About
       </div>
     );
