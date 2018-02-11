@@ -1,3 +1,10 @@
+/*
+// {/* <a href="/" className="header-name"> */
+// <Link to="/" className="header-link">
+// <span> Eric Lau </span>
+// {/* Eric Lau */}
+// {/* </a> */}
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -20,10 +27,9 @@ class Header extends Component {
           </li>
           <li>
             <div className="middle">
-
-            <a href="/" className="header-name">
-            Eric Lau
-          </a>
+              <Link to="/" className="header-link header-name">
+                Eric Lau
+              </Link>
             </div>
           </li>
           <li>

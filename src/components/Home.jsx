@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 // import image from '../assets/websiteHome.jpg';
+// import image from '../../public/websiteHome.jpg';
 import Header from './Header';
 
 // import { Route, Switch } from 'react-router-dom';
